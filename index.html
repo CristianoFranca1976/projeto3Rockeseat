@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Cristiano franca">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Web site de formulario">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/LetraC.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div  id="projeto">
+    <div id="retangulo">
+     <header>
+     <h1>Crie e compartilhe 
+        seu evento.</h1>
+        <p>O primeiro passo, é preencher esse
+            formulário de inscrição.</p>
+    </header>
+    <form action="https://formsubmit.co/49f120962618ac269b0179357f2a2502" method="post" id="form">
+        <div id="wrapper">
+        <div id="informacao">
+            <h2>Informações do Evento</h2>
+            <label for="text">Título do evento <span>(mínimo 8 caracteres)</span>
+            <input type="text" name="texto" id="text" required>
+            </label>
+            <label for="text1">Link do evento <span>(comece com https://)</span>
+            <input type="url" name="url" id="url" required>
+            </label>
+            <label for="text2">Whatsapp para contato <span>(somente números)</span>
+            <input type="text" name="text2" id="text2" required>
+            </label>
+            <label for="">Informações  extras
+                <textarea name="text3" id="text3" cols="30" rows="10"></textarea>
+            </label>
+            <label for="">Categoria
+                <select>
+                    <option value="Tipo do evento">Tipo do evento</option>
+                    <option value="Privado">Privado</option>
+                    <option value="Publico">Publico</option>
+                    <option value="Em Grupo">Em grupo</option>
+                    <option value="Novo">Novo</option>
+                </select>
+            </label>  
+        </div>
+        <div id="privacidade">
+            <h3>Privacidade</h3>
+            <label for="email">E-mail do administrador <span>(digite um email válido)</span>
+                <input type="email" name="email" id="email" required>
+            </label>
+            <label for="passo">Senha de acesso para os participantes <span>(mínimo 8 caracteres)</span>
+                <input type="password" name="passo" id="passo"  minlength="8">
+            </label>
+            <label for="checkbox">
+                <input type="checkbox" name="checkbox" id="checkbox" required>&nbsp; &nbsp;
+                Evento privado
+            </label>
+        </div>
+        <div id="horario">
+            <h4>Dia e hora</h4>
+            <div id="frame">
+                <label for="date">Data
+                    <input type="date" name="date" id="date" required>
+                </label>
+                <label for="time">Das
+                    <input type="time" name="time" id="time" required>
+                </label>
+                <label for="time1">Até
+                    <input type="time" name="time1" id="time1" required>
+                </label>
+            </div>
+        </div>
+        </div>
+        <div id="down">
+          <button type="submit" form="form">Salvar evento</button>
+        </div>
+    </form>
+    </div>   
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>
